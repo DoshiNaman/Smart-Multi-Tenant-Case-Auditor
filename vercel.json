@@ -1,14 +1,19 @@
 {
-    "experimentalServices": {
-        "frontend": {
-            "root": "frontend",
-            "routePrefix": "/",
-            "framework": "nextjs"
-        },
-        "backend": {
-            "root": "backend",
-            "routePrefix": "/api",
-            "framework": "nestjs"
+  "experimentalServices": {
+    "frontend": {
+      "root": "frontend",
+      "routePrefix": "/",
+      "framework": "nextjs"
+    },
+    "backend": {
+      "root": "backend",
+      "routePrefix": "/api",
+      "framework": "nestjs",
+      "config": {
+        "outputFileTracingIncludes": {
+          "**/*": ["./node_modules/@nestjs/**"]
         }
+      }
     }
+  }
 }
