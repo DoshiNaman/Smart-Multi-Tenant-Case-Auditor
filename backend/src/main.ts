@@ -10,7 +10,7 @@ async function bootstrap() {
   const config = app.get(AppConfigService);
   const logger = new Logger('Bootstrap');
 
-  app.setGlobalPrefix('api/v1');
+  app.setGlobalPrefix('v1');
   app.use(cookieParser());
   app.enableCors({
     origin: config.corsOrigin,
